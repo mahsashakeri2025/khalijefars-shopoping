@@ -1,0 +1,97 @@
+:root{
+    --colorOne:#b2a088;
+    --colorTwo:#f7f7f7;
+    --colorThree:#336435;
+    --colorFour:#f2ebe1;
+    --colorFive:#5e6973;
+}
+.top{
+    height: 50px;
+    background-color: var(--colorTwo);
+    padding: 0 7%;
+    justify-content: space-between;
+    >div{
+        width: 150px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+       svg{
+        color: var(--colorOne);
+       }
+       p{
+        color: var(--colorFive);
+
+       }
+   }
+}
+header{
+    width: 100%;
+    .header-p1{
+        width: 100%;
+        height: 60px;
+        padding: 0 10%;
+        justify-content: space-between;
+        align-items: center;
+                h4{
+                    color: var(--colorFive);
+                    font-size: 24px;
+                }
+        div{ 
+            height: 80%;
+            display: flex;
+            align-items: center;
+            border: 2px solid var(--colorOne);
+            border-radius: 50px;
+            >a{
+                color: var(--colorFive);
+                font-size: 18px;
+            }
+            &:nth-child(2){
+                width: 40%;
+                height: 100%;
+                overflow: hidden;
+                
+                >a{
+                    width:80%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                }
+                >span{  
+                    width: 20%;
+                    height: 100%;
+                    display: flex;
+                    
+                    >svg{
+                        width: 60px;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-content: center;
+                        color: #f7f7f7;
+                        background-color: var(--colorOne); 
+                    }
+                }
+            }
+            &:nth-child(3){
+                width: 25%;
+                justify-content: space-between;
+                >div{
+                    width: 60%;
+                    padding: 0 10px;
+                    margin:0 10px;
+                    border: none;
+                    justify-content: space-between;
+                }
+                >span{
+                    width: 20%;
+                    color: var(--colorOne);
+                }
+            }
+
+        }
+    
+    }
+}
