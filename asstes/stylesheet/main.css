@@ -1,6 +1,6 @@
 :root{
     --colorOne:#b2a088;
-    --colorTwo:#f7f7f7;
+    --colorTwo:#faf9f7;
     --colorThree:#336435;
     --colorFour:#f2ebe1;
     --colorFive:#5e6973;
@@ -38,7 +38,7 @@ header{
                     color: var(--colorFive);
                     font-size: 24px;
                 }
-        div{ 
+        .p-one{ 
             height: 80%;
             display: flex;
             align-items: center;
@@ -48,9 +48,9 @@ header{
                 color: var(--colorFive);
                 font-size: 18px;
             }
-            &:nth-child(2){
+            &:nth-of-type(1){
                 width: 40%;
-                height: 100%;
+                height: 80%;
                 overflow: hidden;
                 
                 >a{
@@ -59,11 +59,9 @@ header{
                     display: flex;
                     align-items: center;
                 }
-                >span{  
+                div{  
                     width: 20%;
                     height: 100%;
-                    display: flex;
-                    
                     >svg{
                         width: 60px;
                         height: 100%;
@@ -75,19 +73,23 @@ header{
                     }
                 }
             }
-            &:nth-child(3){
+             &:nth-of-type(2){
                 width: 25%;
+                padding: 0 15px;
                 justify-content: space-between;
                 >div{
                     width: 60%;
-                    padding: 0 10px;
                     margin:0 10px;
-                    border: none;
                     justify-content: space-between;
-                }
-                >span{
-                    width: 20%;
-                    color: var(--colorOne);
+
+                &:nth-of-type(1){
+                        width: 70%;
+                        color: var(--colorFive);
+                    }
+                &:nth-of-type(2){
+                        width: 20%;
+                        color: var(--colorOne);
+                    }
                 }
             }
 
