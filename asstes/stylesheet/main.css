@@ -5,6 +5,7 @@
     --colorFour:#faf9f7;
     --colorFive:#f2ebe1;
     --colorSix:#5e6973;
+    --boxShadow:  5px 5px 15px 0px rgba(0, 0, 0, 0.20);
 }
 
 .top{
@@ -12,6 +13,7 @@
     background-color: var(--colorTwo);
     padding: 0 7%;
     justify-content: space-between;
+    box-shadow: var(--boxShadow);
     >div{
         width: 150px;
         height: 100%;
@@ -31,16 +33,16 @@ header{
     width: 100%;
     .header-p1{
         width: 100%;
-        min-height: 60px;
-        padding: 0 5%;
+       height: 100px;
+        padding: 20px 5%;
         justify-content: space-between;
         align-items: center;
-                h4{
-                    color: var(--colorSix);
-                    font-size: 24px;
-                }
+            >h4{
+                color: var(--colorSix);
+                font-size: 24px;
+            }
         .p-one{ 
-            height: 80%;
+            height: 100%;
             display: flex;
             align-items: center;
             border: 2px solid var(--colorOne);
@@ -50,20 +52,19 @@ header{
                 font-size: 18px;
             }
             &:nth-of-type(1){
-                width: 60%;
-                height: 100%;
-                background-color: #336435;
+                width: 50%;
+                height:80%;
                 overflow: hidden;
                 
                 >a{
-                    width:90%;
+                    width:80%;
                     height: 100%;
                     display: flex;
                     align-items: center;
                     padding-right: 10px;
                 }
                 div{  
-                    width: 10%;
+                    width: 20%;
                     height: 100%;
                     background-color: var(--colorOne); 
                     >svg{
@@ -78,10 +79,9 @@ header{
             }
              &:nth-of-type(2){
                 width: 25%;
-                height: 100%;
+                height: 80%;
                 padding: 0 15px;
                 justify-content: space-between;
-                background-color: #336435;
                 >div{
                     width: 60%;
                     margin:0 10px;
@@ -99,15 +99,21 @@ header{
             }
             
         }
-        
     }
     >nav{
-       min-height: 60px;
-        margin-top: 20px;
+       height: 60px;
         background-color:var(--colorFour);
+        box-shadow: var(--boxShadow);
         position: relative;
         >.navigation{
             justify-content: space-evenly;
+               .menu:hover{
+                .list{
+                    height: 150px;
+                    padding: 10px;
+                    color: #b2a088;
+                }
+            }
             li{
                 width: 100px;
                 height: 100%;
@@ -143,13 +149,6 @@ header{
                   
                 }
             }
-            &:hover{
-                .list{
-                    min-height: 150px;
-                    padding: 10px;
-                    color: #b2a088;
-                }
-            }
             .list{
                 position: absolute;
                 width: 80%;
@@ -177,8 +176,6 @@ header{
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        border: 1px solid red;
-                        background-color: #336435;
                         font-size: 18px;
                  }
                 }
@@ -186,4 +183,67 @@ header{
         }
 
      }
+}
+main{
+    width: 100%;
+    .first-part{
+        width: 100%;
+        height: 400px;
+        background-image:url(../images/background\ image.jpg) ;
+        position: relative;
+        >.box{
+            width:550px;
+            height: 250px;
+            border-radius: 100px 20px 20px 100px;
+            padding: 30px;
+            position: absolute;
+            right: 40px;
+            top: 100px;
+            box-shadow: var(--boxShadow);
+
+            >h4{
+                font-size: 50px;
+                font-weight: 500;
+                color: var(--colorSix);
+            }
+            >p{
+                font-size: 30px;
+                color: var(--colorThree);
+            }
+            >div{
+                width: 100%;
+                height: 50px;
+                margin-top: 20px;
+                border-radius: 100px 20px 20px 100px ;
+                box-shadow: var(--boxShadow);
+                >p{
+                    width: 70%;
+                    height: 100%;
+                    right: 0;
+                    font-size: 18px;
+                    color:var(--colorSix);
+                    background-color:#d9d5c9 ;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 100px 20px 20px 100px ;
+                }
+                div{
+                    overflow: hidden;
+                    width: 30%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    
+                    >a{
+                        color: var(--colorSix);
+                    }
+                    >svg{
+                        color: var(--colorThree);
+                    }
+                }
+            }
+        }
+    }
 }

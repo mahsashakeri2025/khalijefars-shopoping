@@ -12,7 +12,6 @@ body{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        box-shadow:1px 1px 35px 1px rgba(0,0,0,0.1);
     }
 }
 a{
@@ -26,7 +25,7 @@ li{
     list-style-type: none;
 }
 svg{
-    width: 25px;
+    width: 20px;
     height: 25px;
     overflow: hidden;
 }
