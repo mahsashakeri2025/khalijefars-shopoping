@@ -19,7 +19,6 @@
 body{
     font-family: yekan;
 }
-
 .top{
     height: 50px;
     background-color: var(--colorTwo);
@@ -176,8 +175,6 @@ header{
                 justify-content: center;
                 transition: 1s;
                 border-radius: 0 0 10px 10px;
-                
-                
                 >li{
                     display: flex;
                     justify-content: center;
@@ -244,7 +241,7 @@ main{
                 border-radius: 100px 20px 20px 100px ;
                 box-shadow: var(--boxShadow);
                 >p{
-                    width: 70%;
+                    width: 60%;
                     height: 100%;
                     right: 0;
                     font-size: 18px;
@@ -257,7 +254,7 @@ main{
                 }
                 div{
                     overflow: hidden;
-                    width: 30%;
+                    width: 40%;
                     height: 100%;
                     display: flex;
                     justify-content: space-around;
@@ -277,7 +274,7 @@ main{
             width: 450px;
             height: 450px;
             left: 150px;
-            top: 100px;
+            top: 120px;
             border-radius: 50%;
             box-shadow: var(--boxShadow);
             >p{
@@ -285,8 +282,9 @@ main{
                 width: 180px;
                 height: 350px;
                 border-radius: 80px;
-                top:-80px;
-                padding: 40px;
+                top: -90px;
+                right: 10px;
+                padding: 30px;
                 justify-content: center;
                 color: #f2ebe1;
                 font-size: 26px;

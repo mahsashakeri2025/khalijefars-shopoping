@@ -13,19 +13,19 @@ body{
         display: flex;
         flex-wrap: wrap;
     }
-}
-a{
-    text-decoration: none;
-    color: inherit;
-    &:visited{
+    a{
+        text-decoration: none;
         color: inherit;
+        &:visited{
+            color: inherit;
+        }
     }
-}
-li{
-    list-style-type: none;
-}
-svg{
-    width: 20px;
-    height: 25px;
-    overflow: hidden;
+    li{
+        list-style-type: none;
+    }
+    svg{
+        width: 25px;
+        height: 25px;
+        overflow: hidden;
+    }
 }
